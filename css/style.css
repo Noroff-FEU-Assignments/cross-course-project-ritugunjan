@@ -3,20 +3,24 @@
   padding: 0;
   box-sizing: border-box;
 }
+.font {
+  font-family: Passion One;
+  font-size: 20px;
+}
 .navbar {
   display: flex;
   align-items: center;
   padding: 20px;
 }
-.nav {
+nav {
   flex: 1;
   text-align: right;
 }
-.nav ul {
+nav ul {
   display: inline;
   list-style-type: none;
 }
-.nav ul li {
+nav ul li {
   display: inline-block;
   margin-right: 20px;
 }
