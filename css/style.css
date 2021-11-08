@@ -10,3 +10,7 @@ h1 {
   display: inline-block;
   list-style-type: none;
 }
+a {
+  display: inline;
+  list-style-type: none;
+}
