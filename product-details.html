@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rainy Days | Home</title>
+    <title>Rainy Days | Products</title>
     <link href="css/style.css" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +12,6 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
 </head>
 <body>
-    <header>
         <div class="container">
         <div class="navbar">
         <div class="logo">
@@ -36,31 +35,40 @@
             </div>
         </nav>
        </div>
-       <div class="row">
-        <div class="col-2">
-            <h1>Outdoor Jackets </h1>
-            <p>Designed for outdoor All season Durable Stylish Comfortable Affordable</p>
-            <a href="" class="cta">Explore</a>
+       <!---single product detail--->
+      <div class="small-container single-product">
+           <div class="row">
+               <div class="col-2">
+                   <img src="images/RainJacket1.jpg" alt="yellow rain jacket" width="100%">
+               </div>
+               <div class="col-2">
+                   <p>Home / Jackets</p>
+                   <h1>Yellow Rain Jacket</h1>
+                   <h2>500 Kroner</h2>
+                   <select>
+                       <option>Size</option>
+                       <option>S</option>
+                       <option>M</option>
+                       <option>L</option>
+                       <option>XL</option>
+                       <option>XXL</option>   
+                   </select>
+                   <input type="number" value="1">
+                   <a href="" class="cta">Add To Cart</a>
+                   <h3>Product Details</h3>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, praesentium. Possimus totam quibusdam itaque recusandae, ex dolores esse nobis autem sunt, iste officia doloremque, eligendi harum voluptatibus quod ut sed!</p>
+               </div>
+           </div>
         </div>
-        <div class="col-2">
-            <img src="images/HomePage2.jpg" alt="Couple on a mountail top">
-        </div>
-    </div>
-    </div>
-    </header>
-    <!----featured category---->
-    <div class="categories">
-        <div class="small container">
-            <div class="row">
-                <div class="col-3"><img src="images/SkiJacket.jpg" alt="yellow ski jacket"></div>
-                <div class="col-3"><img src="images/WinterJacketWomen2.jpg" alt="red winter jacket"></div>
-                <div class="col-3"><img src="images/HikingJacket5.jpg" alt="unisex hiking jacket"></div>
-            </div>
-        </div>   
-    </div>
-<!----featured products---->
+        <!---title--->
 <div class="small-container">
-    <h2 class="title">Featured Products</h2>
+    <div class="row row-2">
+        <h2>Related Products</h2>
+        <p>View More</p>
+    </div>
+</div>
+        <!---products--->
+<div class="small-container">
     <div class="row">
         <div class="col-4">
             <img src="images/RainJacket1.jpg" alt="yellow men rain jacket">
@@ -99,8 +107,8 @@
             <p>500 Kroner</p>
         </div>
         <div class="col-4">
-            <img src="images/WinterJacketWomen.jpg" alt="winter jacket with fur hoodie">
-            <h3>Winter Jacket Women</h3>
+            <img src="images/WinterJacketWomen.jpg" alt="olive green hiking jacket">
+            <h3>Olive Green Hiking Jacket</h3>
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -110,6 +118,13 @@
             </div>
             <p>500 Kroner</p>
         </div>
+    </div>
+    <div class="page-cta">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>Next</span>
     </div>
 </div>
 <!---footer--->
