@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rainy Days | About</title>
+    <title>Rainy Days | Contact</title>
     <link href="css/style.css" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,16 +35,32 @@
             </div>
         </nav>
        </div>
-      <!--about-->
-      <div class="aboutus">
-          <h2>About Us</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae a, iusto eos, quos dolore aliquam delectus deserunt ab ullam placeat veniam voluptatum quam tempora libero culpa porro at impedit
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates fugiat earum veritatis molestiae, non impedit facere officiis ullam eaque accusantium minus repudiandae magni numquam doloremque ipsum similique perferendis obcaecati inventore?</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit assumenda aliquam numquam vitae officiis, aliquid laudantium nam mollitia nostrum libero dolorum repellendus vel consequatur unde consectetur? Quasi voluptates aspernatur tempora.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio odit sint incidunt repellat fuga, delectus obcaecati optio quia ab iusto error quasi et animi architecto aspernatur quisquam unde quae mollitia?</p>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, expedita aperiam quis officiis deleniti laborum cupiditate labore rerum nesciunt praesentium? Nulla corrupti nobis obcaecati nisi, iure omnis placeat. Blanditiis, quam!</p>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, explicabo! Quo ipsam similique facilis ducimus quaerat blanditiis, dolor suscipit explicabo eum et numquam libero provident iure minima expedita neque aperiam.</p>
-      </div>  
+      <!--contact-->
+      <main class="contact">
+        <h1>Contact</h1>
+        <form method="POST">
+          <div class="form-wrapper">
+            <section>
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" />
+              <label for="email">Email</label>
+              <input type="email" id="email" name="Email" />
+              <label for="products">Products</label>
+              <select id="products" name="Products">
+              </select>
+              <div>
+                <input type="checkbox" id="email-updates" name="email-updates" />
+                <label for="email-updates">Sign up for email updates.</label>
+              </div>
+            </section>
+            <section>
+              <label for="message">Message</label>
+              <textarea id="message" name="message"></textarea>
+            </section>
+          </div>
+          <input type="submit" value="Send Now" class="cta cta-large" />
+        </form>
+      </main>   
 <!---footer--->
 <div class="footer">
     <div class="container">
