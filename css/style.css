@@ -82,11 +82,23 @@ header .row {
 .logo {
   width: 125px;
 }
-.icon,
-.menu-icon {
+
+.icon, .menu-icon {
+width: 30px;
+height: 30px;
+}
+
+.icon img {
   width: 30px;
   height: 30px;
+  display: inline-block;
 }
+
+.menu-icon {
+  margin: 20PX;
+  display: none;
+}
+
 .menu-icon img {
   width: 100%;
   display: inline-block;
@@ -96,7 +108,7 @@ header .row {
 }
 .col-3 {
   flex-basis: 30%;
-  min: width 150px;
+  min-width: 150px;
   margin-bottom: 30px;
 }
 .col-3 img {
@@ -126,7 +138,7 @@ header .row {
   color: #000;
 }
 .title ::after {
-  content: "";
+  content: '';
   background: #037f8c;
   width: 80px;
   height: 5px;
@@ -138,13 +150,13 @@ header .row {
 }
 h3 {
   color: #037f8c;
-  font-weight: bold;
+  font-weight: normal;
 }
 .col-4 p {
-  font-size: 20px;
+  font-size: 14px;
 }
 .rating .fa {
-  color: #000;
+  color: #037f8c;
 }
 .col-4:hover {
   transform: translateY(-5px);
@@ -190,43 +202,22 @@ ul {
   list-style-type: none;
 }
 .app-logo {
-  width: 20px;
-  height: 20px;
+  margin-top: 20px;
 }
+
 .app-logo img {
-  display: inline-block;
-  width: 100%;
-  padding-top: 20px;
+  width: 140px;
 }
+
 .copyright {
   text-align: center;
 }
 
-/*media query for menu*/
-@media only screen and (max-width: 800px) {
-  nav ul {
-    position: absolute;
-    top: 70px;
-    left: 0;
-    background: #037f8c;
-    width: 100%;
-    overflow: hidden;
-    transition: max-height 0.5s;
-  }
-  nav ul li {
-    display: block;
-    margin-right: 50px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  nav ul li a {
-    color: #ffffff;
-  }
-  .menu-icon {
-    display: block;
-    cursor: pointer;
-  }
+.menu-icon {
+  width: 28px;
+  margin-left: 20px;
 }
+
 /*all products*/
 .row-2 {
   justify-content: space-between;
@@ -255,7 +246,7 @@ select {
 }
 /*single product detail*/
 .single-product {
-  margin-top: 50px;
+  margin-top: 80px;
 }
 .single-product .col-2 img {
   padding: 0;
@@ -265,7 +256,7 @@ select {
 }
 .single-product h2 {
   margin: 20px 0;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: bold;
 }
 .single-product select {
@@ -275,7 +266,8 @@ select {
 }
 .single-product input {
   width: 50px;
-  height: 50px;
+  height: 40px;
+  padding-left: 10px;
   font-size: 20px;
   margin-right: 10px;
   border: 1px solid #000;
@@ -289,11 +281,12 @@ select {
   background: #ffffff;
   width: 300px;
   height: 400px;
-  position: relative;
+  position: relative; 
   text-align: center;
-  margin-left: 150px;
   padding: 20px 0;
-  box-shadow: 0 0 20px 0px;
+  margin: auto;
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+  overflow: hidden;
 }
 .form-container span {
   font-weight: bold;
@@ -311,6 +304,7 @@ select {
   padding: 0 20px;
   position: absolute;
   top: 130px;
+  transition: transform 1s;
 }
 form input {
   width: 100%;
@@ -321,6 +315,7 @@ form input {
 }
 form .cta {
   width: 100%;
+  border: none;
   cursor: pointer;
   margin: 10px 0;
 }
@@ -336,6 +331,17 @@ form .cta:focus {
 form a {
   font-size: 12px;
 }
+
+#Indicator {
+  width: 100px;
+  border: none;
+  background: #037f8c;
+  height: 3px;
+  margin-top: 8px;
+  transform: translateX(100px);
+  transition: transform 1s;
+}
+
 .aboutus {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -344,6 +350,97 @@ form a {
   text-align: left;
   font-size: 30px;
   font-weight: bold;
+}
+
+/*cart items*/
+
+.cart-page {
+  margin: 80px auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+th {
+  text-align: left;
+  padding: 5px;
+  color: #ffffff;
+  background: #037f8c;
+  font-weight: normal;
+}
+
+td {
+  padding: 10px 5px;
+}
+
+td input {
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+}
+
+td a {
+  color: red;
+  font-size: 12px;
+}
+
+td img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.total-price {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.total-price table {
+  border-top: 3px solid black;
+  width: 100%;
+  max-width: 400px;
+}
+
+td:last-child {
+  text-align: right;
+}
+
+th:last-child {
+  text-align: right;
+}
+
+/*media query for menu*/
+
+@media only screen and (max-width: 800px) {
+  nav ul {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: #037f8c;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  nav ul li a {
+    color: #ffffff;
+  }
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
 }
 
 /*media query for less than 600 screen size*/
@@ -356,4 +453,8 @@ form a {
   .col-4 {
     flex-basis: 100%;
   }
+}
+
+.cart-info p {
+  display: none;
 }

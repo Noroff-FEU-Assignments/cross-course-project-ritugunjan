@@ -16,25 +16,22 @@
         <div class="container">
         <div class="navbar">
         <div class="logo">
-        <img src="logo/RainyDays_Logo.png" alt="snow capped mountain"/>
+        <a href="index.html"><img src="logo/RainyDays_Logo.png" alt="snow capped mountain"/></a> 
         </div>
         </div>
         <div class="navigation">
         <nav>
-            <ul>
+            <ul id="MenuItems">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="account.html">Account</a></li>
             </ul>
-            <div class="icon">
-            <img src="icons/shopping-cart.png" alt="shopping cart icon">
-            </div>
-            <div class="menu-icon">
-                <img src="icons/list.png" alt="hamburger menu icon">
             </div>
         </nav>
+           <a href="cart.html"><img src="icons/shopping-cart.png" class="icon"alt="shopping cart icon"></a> 
+                <img src="icons/list.png" class="menu-icon" alt="hamburger menu icon" onclick="menutoggle()">
        </div>
        <div class="row">
         <div class="col-2">
@@ -63,8 +60,8 @@
     <h2 class="title">Featured Products</h2>
     <div class="row">
         <div class="col-4">
-            <img src="images/RainJacket1.jpg" alt="yellow men rain jacket">
-            <h3>Yellow Rain Jacket</h3>
+           <a href="product-details.html"><img src="images/RainJacket1.jpg" alt="yellow men rain jacket"></a>
+           <a href="product-details.html"><h3>Yellow Rain Jacket</h3></a> 
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -72,7 +69,7 @@
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-o"></i>
             </div>
-            <p>500 Kroner</p>
+            <p>500 NOK</p>
         </div>
         <div class="col-4">
             <img src="images/HikingJacket1.jpg" alt="olive green hiking jacket">
@@ -84,7 +81,7 @@
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-o"></i>
             </div>
-            <p>500 Kroner</p>
+            <p>500 NOK</p>
         </div>
         <div class="col-4">
             <img src="images/SkiJacket2.jpg" alt="yellow ski jacket">
@@ -96,7 +93,7 @@
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-o"></i>
             </div>
-            <p>500 Kroner</p>
+            <p>500 NOK</p>
         </div>
         <div class="col-4">
             <img src="images/WinterJacketWomen.jpg" alt="winter jacket with fur hoodie">
@@ -108,7 +105,7 @@
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-o"></i>
             </div>
-            <p>500 Kroner</p>
+            <p>500 NOK</p>
         </div>
     </div>
 </div>
@@ -147,6 +144,6 @@
         </div>
     </div>
 </div>
-    
+ <script src="js/script.js"></script>   
 </body>
 </html>

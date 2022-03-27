@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rainy Days | Contact</title>
+    <title>Rainy Days | Shopping Cart</title>
     <link href="css/style.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="css/form.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Passion+One&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -36,34 +35,66 @@
             </div>
         </nav>
        </div>
-      <!--contact-->
-      <main class="formcontainer">
-        <form id="contactForm">
-            <div>
-                <label>
-                    Full Name (required)
-                    <input name="fullName" id="fullName" />
-                </label>
-                <div class="form-error" id="fullNameError">Please enter your name</div>
-            </div>
-            <div>
-                <label>
-                    Email (required)
-                    <input name="email" id="email" />
-                </label>
-                <div class="form-error" id="emailError">Please enter a valid email address</div>
-            </div>
-            <div>
-                <label>
-                    Message (required)
-                    <input name="message" id="message" />
-                </label>
-                <div class="form-error" id="messageError">Your message must be at least 20 characters</div>
-            </div>
-             <button>Submit</button>
-        </form>
+</div>
+      <!---cart items--->
+<div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Total Price</th>    
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/RainJacket1.jpg" alt="yellow rain jacket">
+                    <div>
+                        <p>Yellow Rain Jacket</p>
+                        <small>Price: 500 NOK</small>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>500 NOK</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/HikingJacket1.jpg" alt="olive green hiking jacket">
+                    <div>
+                        <p>Olive Green Hiking Jacket</p>
+                        <small>Price: 500 NOK</small>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>500 NOK</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/WinterJacketWomen.jpg" alt="olive green winter jacket">
+                    <div>
+                        <p>Olive Green Winter Jacket</p>
+                        <small>Price: 500 NOK</small>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>500 NOK</td>
+        </tr>
+    </table>    
+<div class="total-price">
+    <table>
+        <tr>
+            <td>Total Price</td>
+            <td>1500 NOK</td>
+        </tr>
+    </table>
+</div>
 
-    </main>  
+</div>
+
 <!---footer--->
 <div class="footer">
     <div class="container">
@@ -99,6 +130,6 @@
         </div>
     </div>
 </div>
-<script src="js/form.js"></script>   
+<script src="js/script.js"></script>   
 </body>
 </html>
